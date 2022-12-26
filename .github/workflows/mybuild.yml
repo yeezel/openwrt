@@ -2,11 +2,11 @@ name: openwrt build
 
 on:
   workflow_dispatch:
-    inputs:
-      param:
-        description: 'parameter'
-        required: false
-        default: ''
+#     inputs:
+#       param:
+#         description: 'parameter'
+#         required: false
+#         default: ''
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
