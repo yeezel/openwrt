@@ -34,8 +34,8 @@ jobs:
     - name: git source
       run: |
         git clone $REPO_URL openwrt
-        cd openwrt
-        git checkout $REPO_TAG 
+        #cd openwrt
+        #git checkout $REPO_TAG 
       
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
