@@ -23,6 +23,11 @@ jobs:
     - name: install soft
       run: sudo apt-get install mkisofs
     
+    - name: info
+      run: |
+        whoami
+        pwd
+    
     - name: Check before space usage
       run: df -hT
     
