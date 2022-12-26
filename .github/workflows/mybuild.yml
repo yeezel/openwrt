@@ -28,7 +28,7 @@ jobs:
     
     - name: git source
       working-directory: /
-      run: git clone $REPO_URL --checkout $REPO_TAG openwrt
+      run: git clone $REPO_URL openwrt --checkout $REPO_TAG 
       
     - name: Update feeds
       run: cd /openwrt && ./scripts/feeds update -a
