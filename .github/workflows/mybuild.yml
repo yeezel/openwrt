@@ -21,7 +21,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: install soft
-      run: apt-get install mkisofs
+      run: sudo apt-get install mkisofs
     
     - name: Check before space usage
       run: df -hT
